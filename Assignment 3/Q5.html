@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration Form</title>
+</head>
+<body>
+<h1>Online Event Registration</h1>
+<form action="/register" method="post">
+ 
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname" required><br><br>
+
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+
+  <label>Gender:</label><br>
+  <input type="radio" name="gender" value="Male"> Male<br>
+  <input type="radio" name="gender" value="Female"> Female<br>
+  <input type="radio" name="gender" value="Other"> Other<br><br>
+
+
+  <label for="age-group">Age Group:</label><br>
+  <select id="age-group" name="age-group">
+    <option value="under18">Under 18</option>
+    <option value="18-30">18-30</option>
+    <option value="31-45">31-45</option>
+    <option value="46+">46+</option>
+  </select><br><br>
+
+
+  <label>Topics of Interest:</label><br>
+  <input type="checkbox" name="topic" value="Tech"> Technology<br>
+  <input type="checkbox" name="topic" value="Science"> Science<br>
+  <input type="checkbox" name="topic" value="Art"> Art<br>
+  <input type="checkbox" name="topic" value="Business"> Business<br><br>
+
+
+  <label for="comments">Additional Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>

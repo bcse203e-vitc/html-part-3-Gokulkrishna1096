@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Booking Form</title>
+</head>
+<body>
+<h1>Travel Booking</h1>
+<form action="/book-travel" method="post">
+
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="contact">Contact Info:</label><br>
+  <input type="email" id="contact" name="contact" placeholder="example@domain.com" required><br><br>
+
+
+  <label for="destination">Destination:</label><br>
+  <select id="destination" name="destination">
+    <option value="delhi">Delhi</option>
+    <option value="paris">Paris</option>
+    <option value="newyork">New York</option>
+    <option value="tokyo">Tokyo</option>
+  </select><br><br>
+
+
+  <label for="travel-date">Travel Date:</label><br>
+  <input type="date" id="travel-date" name="travel-date" required><br><br>
+
+  <label for="travelers">Number of Travelers:</label><br>
+  <input type="number" id="travelers" name="travelers" min="1" required><br><br>
+
+
+  <label>Travel Class:</label><br>
+  <input type="radio" name="class" value="Economy"> Economy<br>
+  <input type="radio" name="class" value="Business"> Business<br>
+  <input type="radio" name="class" value="First"> First Class<br><br>
+
+
+  <input type="checkbox" name="insurance" value="yes"> Opt for Travel Insurance<br><br>
+
+
+  <label for="cost">Estimated Total Cost (to be calculated via JS):</label><br>
+  <input type="text" id="cost" name="cost" placeholder="Calculated Automatically" readonly><br><br>
+
+
+  <button type="submit">Book Now</button>
+</form>
+</body>
+</html>
